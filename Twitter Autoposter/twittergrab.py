@@ -3,6 +3,7 @@ import sqlite3
 import datetime
 
 file = open("keys.txt")
+#Keys not included for safety purposes
 creds = file.read().split('\n')
 api = twitter.Api(creds[0],creds[1],creds[2],creds[3])
 history = sqlite3.connect("C:\Users\charlotte\AppData\Local\Google\Chrome\User Data\Default\History")
