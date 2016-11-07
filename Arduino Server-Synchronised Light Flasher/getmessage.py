@@ -1,9 +1,9 @@
+#Script reaches across a server and pulls the String value to flash a light on the Arduino depending on value.
+
 from mosquitto import *
 from serial import *
 from random import *
 
-# FULL DEVICE NAME can be found by running: python PortScanner.py
-# SPEED is usually 115200 for Microbit and 9600 for Arduino
 board = Serial("COM5",9600,timeout=2)
 board.readall()
 
